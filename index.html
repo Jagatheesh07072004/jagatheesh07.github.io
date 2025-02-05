@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 30%;
+            height: 300 px;
+            margin: 10px 0;
+        }
+        form {
+            background: #e2e2e2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #2ba3ee;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        form button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Library Blog</h1>
+</header>
+
+<div class="container">
+    <h2>Explore Our Library</h2>
+    <img src="lib.jpg" alt="Library">
+    <img src="lib2.jpg" alt="Tables">
+
+    <h2>Book Feedback Form</h2>
+    <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="bookName">Name of the Book:</label>
+        <input type="text" id="bookName" name="bookName" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Book Content Preview</h2>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+</body>
+</html>
